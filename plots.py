@@ -14,6 +14,6 @@ def price_change(stock_data, ticker):
                                  price and bar chart for the trading volume.
     """
     # create line chart 
-    fig = px.line(stock_data, x=stock_data.index, y=f"Close", title=f"{ticker} Stock Price")
+    fig = px.line(stock_data, x=stock_data.index, y=f"Close", title=f"${ticker.upper()} Stock Price")
 
     return fig
